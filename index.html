@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Figueroa - Turismo Sustentable</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --color-ocre: #E1B866;
+            --color-verde-hoja: #647D5D;
+            --color-arena: #F8F4E9;
+            --color-cafe-oscuro: #3C2F2F;
+        }
+
+        body {
+            background-color: var(--color-arena);
+            color: var(--color-cafe-oscuro);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .icon-color { color: var(--color-verde-hoja); }
+
+        .card {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(60, 47, 47, 0.1);
+            border: 1px solid rgba(60, 47, 47, 0.05);
+        }
+
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            transition: background-color 0.15s ease-in-out;
+        }
+        .whatsapp-button:hover { background-color: #128C7E; }
+    </style>
+</head>
+
+<body>
+
+<div class="card w-full max-w-sm mx-auto p-8 lg:p-10">
+
+    <!-- Imagen sin borde y sin forma circular -->
+    <div class="text-center mb-6">
+        <div class="flex justify-center mb-4">
+            <img 
+                src="afm/logo_afm.jpeg"
+                alt="Logo de Alejandro Figueroa"
+                class="w-32 h-auto object-contain"
+            >
+        </div>
+
+        <h1 class="font-cinzel text-3xl font-bold" style="color: var(--color-cafe-oscuro);">
+            Alejandro Figueroa Molina
+        </h1>
+
+        <p class="mt-1 text-base font-semibold icon-color tracking-wide">
+            Turismo | Cultura | Sustentabilidad
+        </p>
+    </div>
+
+    <!-- Datos -->
+    <div class="space-y-4">
+
+        <div class="flex items-center space-x-3 text-sm">
+            <i data-lucide="map-pin" class="icon-color w-5 h-5"></i>
+            <span class="font-medium" style="color: var(--color-cafe-oscuro);">
+                Xochimilco, CDMX
+            </span>
+        </div>
+
+        <div class="flex items-center space-x-3 text-sm">
+            <i data-lucide="mail" class="icon-color w-5 h-5"></i>
+            <a href="mailto:alefmturismo@gmail.com" 
+               class="font-medium hover:opacity-70 transition"
+               style="color: var(--color-cafe-oscuro);">
+               alefmturismo@gmail.com
+            </a>
+        </div>
+
+        <div class="flex items-center space-x-3 text-sm">
+            <i data-lucide="phone" class="icon-color w-5 h-5"></i>
+            <a href="tel:5568586143" 
+               class="font-medium hover:opacity-70 transition"
+               style="color: var(--color-cafe-oscuro);">
+               55 6858 6143
+            </a>
+        </div>
+
+        <div class="flex items-center space-x-3 text-sm">
+            <i data-lucide="linkedin" class="icon-color w-5 h-5"></i>
+            <a href="https://www.linkedin.com/in/alejandro-figueroa-molina-b68805344" target="_blank"
+               class="font-medium hover:opacity-70 transition"
+               style="color: var(--color-cafe-oscuro);">
+               linkedin.com/in/alejandrofigueromolina
+            </a>
+        </div>
+
+        <div class="flex items-center space-x-3 text-sm">
+            <i data-lucide="instagram" class="icon-color w-5 h-5"></i>
+            <a href="https://instagram.com/notoca.alex" target="_blank"
+               class="font-medium hover:opacity-70 transition"
+               style="color: var(--color-cafe-oscuro);">
+               @notoca.alex
+            </a>
+        </div>
+    </div>
+
+    <div class="mt-8">
+        <a href="https://wa.me/525568586143" target="_blank" 
+           class="whatsapp-button w-full font-semibold py-3 rounded-xl flex items-center justify-center space-x-2 shadow-md hover:shadow-lg transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                 class="w-5 h-5">
+                <path d="M12 2C6.477 2 2 6.477 2 12C2 14.542 3.01 16.85 4.67 18.41L3 21.5L6.16 19.83C7.68 20.78 9.77 21 12 21C17.523 21 22 16.523 22 12C22 6.477 17.523 2 12 2Z" fill="currentColor"/>
+                <path d="M16 13.5C16 14.5 14.5 15.5 12.5 15.5C10.5 15.5 9 14.5 9 13.5C9 12.5 10.5 11.5 12.5 11.5C14.5 11.5 16 12.5 16 13.5Z" fill="#FFF"/>
+            </svg>
+            <span>Enviar WhatsApp</span>
+        </a>
+    </div>
+
+    <div class="mt-6 pt-4 border-t border-gray-100 text-center">
+        <p class="text-xs text-gray-400">
+            Téc. en Admón. de Empresas Turísticas: 12988630
+        </p>
+    </div>
+
+</div>
+
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>
